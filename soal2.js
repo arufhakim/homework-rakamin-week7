@@ -14,11 +14,11 @@ if (fs.existsSync('./log/homework.log')) {
     const writeLog = async () => {
         const data = await readLog();
         await fsPromise.writeFile('./log/log.txt', data, 'utf-8');
-        console.log('Sukses menulis log.txt!');
+        console.log('Berhasil menulis log.txt!');
     }
 
     writeLog();
 
 } else {
-    console.log('Berhasil homework.log tidak ditemukan!');
+    console.log('File homework.log tidak ditemukan!');
 }
